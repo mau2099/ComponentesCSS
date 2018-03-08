@@ -1,0 +1,50 @@
+html, body{
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+  background: #eee;
+}
+/* material design */
+.card{
+  display: inline-block;
+  margin: 0.2em;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  background-color: white;
+  border-radius: 2px;
+  width: 150px;
+  height: 150px;
+  box-shadow: 3px 0px 2px 0px rgba(0,0,0,0.12), 0px 2px 2px 0px rgba(0,0,0,0.24)
+  /* box-shadow: 0px 2px 5px rgba(0,0,0,0.16), 0px 2px 10px rgba(0,0,0,0.12); */
+}
+
+.card:hover{
+  box-shadow: 3px 0px 8px 0px rgba(0,0,0,0.12), 0px 8px 8px 0px rgba(0,0,0,0.24);
+}
+
+
+.zoomIn, .zoomOut{
+  animation: zoomIn 225ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.zoomOut{
+  animation-direction: reverse;
+}
+
+@keyframes zoomIn{
+  0%{
+    transform: scale(0);
+    opacity: 0;
+    /* background-color: white; */
+  }
+  40%{
+    opacity: 0.25;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 1;
+    /* background-color: black; */
+  }
+}

@@ -1,0 +1,45 @@
+html, body{
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+  background: #eee;
+}
+.card.profile{
+  white-space: normal;
+  padding-top: 10px;
+  text-align: center;
+}
+/* material design */
+.card{
+  margin: 0.5em;
+  background-color: white;
+  border-radius: 2px;
+  width: 400px;
+  height: 100px;
+  box-shadow: 3px 0px 2px 0px rgba(0,0,0,0.12), 0px 2px 2px 0px rgba(0,0,0,0.24);
+  /* transition: all 0.3s; */
+  /* box-shadow: 0px 2px 5px rgba(0,0,0,0.16), 0px 2px 10px rgba(0,0,0,0.12); */
+}
+
+.card:hover{
+  box-shadow: 3px 0px 8px 0px rgba(0,0,0,0.12), 0px 8px 8px 0px rgba(0,0,0,0.24);
+}
+
+.container{
+}
+
+ul{
+
+}
+
+ul li{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Helper Classes */
+
+.fixed{
+  position: fixed;
+}

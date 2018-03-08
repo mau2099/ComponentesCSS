@@ -1,0 +1,143 @@
+html, body{
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.overflow-control{
+  overflow-x: hidden;
+}
+/* Hamburger Navigation */
+.main-container{
+  white-space: nowrap;
+  position: relative;
+  left: -300px;
+  transition: 0.5s cubic-bezier(0.25,0.1,0.25,1);  /*cubic-bezier(1,-0.38, 0, 1.28) */
+}
+
+.main-container.open{
+  left: 0px;
+}
+.main-container *{
+  white-space: normal;
+}
+
+.main-container .content, .main-container .lateral-menu{
+  display: inline-block;
+  margin-right: -4px;
+  vertical-align: top;
+  height: 100vh;
+}
+
+.main-container .content {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* laterla menu */
+
+.main-container .lateral-menu{
+  width: 300px;
+  text-align: center;
+  background-color: black;
+}
+
+.main-container .lateral-menu li{
+  list-style-type: none;
+  padding: 8px 15px;
+  background-color: black;
+  border-bottom: solid 3px #222;
+  font-size: 2em;
+  color: white;
+  margin-bottom: 2px;
+}
+
+
+/* Hero Image */
+.content .hero-image-container{
+  height: 75vh;
+  width: 100%;
+  position: relative;
+}
+.content .hero-image-container .hero-image{
+  position: relative;
+  height: 75vh;
+  width: 100%;
+  background: url(../multimedia/tech1.jpeg), whitesmoke;
+  filter: blur(1px) opacity(0.8) grayscale(0.7);
+  background-size: cover;
+  background-position: center;
+}
+.content .hero-image-container .hero-text{
+  position: absolute;
+  top: 0;
+  height: 75vh;
+  width: 100%;
+  display: flex; /*Uso de Flexbox para centrar verticalmente */
+  align-items: flex-end;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.content .hero-text div{
+  margin-bottom: 3em;
+}
+.content .hero-text h1{
+  text-shadow: 0px 0px 10px #000;
+  margin: 0px;
+  font-size: 3em;
+}
+.content .hero-text p{
+  text-shadow: 2px 2px 2px blue;
+  margin: 0px;
+  font-size: 1.5em;
+}
+
+/* sticky navigation */
+
+.content .sticky-nav .button-nav{
+  vertical-align: middle;
+  display: inline-block;
+  background: black;
+}
+
+.content .sticky-nav{
+  background-color: black;
+  text-align: left;
+  width: 100%;
+  padding: 5px;
+  top: 0px;
+}
+
+.content .sticky-nav li{
+  margin: 0.5em;
+  color: white;
+  display: inline-block;
+  padding: 0.5em;
+}
+
+.content .sticky-nav li:hover{
+  border-radius: 60px 40px 40px 0px;
+  cursor: pointer;
+  background-color: rgba(0, 130, 0, 1);
+  box-shadow: 4px 4px 0px 3px rgb(11, 66, 11), 12px 12px 4px rgba(111, 111, 111, 0.3)
+}
+.content .sticky-nav li:active{
+  border-radius: 60px 40px 40px 0px;
+  cursor: pointer;
+  background-color: rgba(0, 130, 0, 1);
+  box-shadow: 1px 1px 0px 3px rgb(11, 66, 11), 9px 9px 4px rgba(111, 111, 111, 0.3)
+}
+
+/* Helper Classes */
+.fixed{
+  position: fixed;
+}
+
+.full-height{
+  height: 100%;
+}
+.relative{
+  position: relative;
+}

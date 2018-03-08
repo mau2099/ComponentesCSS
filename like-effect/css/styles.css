@@ -1,0 +1,41 @@
+html, body{
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+  background: #eee;
+}
+/* material design */
+.card{
+  border-radius: 2px;
+  width: 300px;
+  height: 400px;
+  box-shadow: 3px 0px 2px 0px rgba(0,0,0,0.12), 0px 2px 2px 0px rgba(0,0,0,0.24)
+  /* box-shadow: 0px 2px 5px rgba(0,0,0,0.16), 0px 2px 10px rgba(0,0,0,0.12); */
+}
+
+.card:hover{
+  box-shadow: 3px 0px 8px 0px rgba(0,0,0,0.12), 0px 8px 8px 0px rgba(0,0,0,0.24);
+}
+
+.heart{
+  animation: like 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function:cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+@keyframes like {
+  0%{
+    opacity: 0;
+    transform: scale(0);
+  }
+  40%{
+    opacity: 1;
+    transform: scale(1);
+  }
+  60%{
+    opacity: 1;
+    transform: scale(1);
+  }
+  100%{
+    opacity: 0;
+    transform: scale(0);
+  }
+}

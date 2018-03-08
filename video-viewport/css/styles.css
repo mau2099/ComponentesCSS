@@ -1,0 +1,23 @@
+html, body{
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+  background: #eee;
+  width: 100%;
+  height: 100%;
+}
+
+.video-viewport{
+  background: url(../multimedia/Busy-City.mp4);
+  background-size: cover;
+  background-position: center;
+  background-color: #222;
+}
+
+.video-viewport video {
+  width: 50%;
+  height: 50%;
+}
+
+.full-heigth{
+  height: 100%;
+}
